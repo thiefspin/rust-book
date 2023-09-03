@@ -16,7 +16,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build
+    - name: Build Fibonacci
       run: cd fibonacci && cargo build --verbose
-    - name: Run tests
+    - name: Run tests Fibonacci
       run: cd fibonacci && cargo test --verbose
+    - name: Build Rocket Rest
+      run: cd rocket-rest && cargo build --verbose
+    - name: Run tests Rocket Rest
+      run: cd rocket-rest && cargo test --verbose
