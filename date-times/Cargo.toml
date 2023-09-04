@@ -1,14 +1,10 @@
 [package]
-name = "rocket-rest"
+name = "date-times"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = "0.4.28"
 serde = { version = "1.0", features = ["derive"] }
-chrono = { version = "0.4.28", features = ["serde"] }
-
-[dependencies.rocket]
-rocket = "0.5.0-rc.3"
-features = ["json"]
