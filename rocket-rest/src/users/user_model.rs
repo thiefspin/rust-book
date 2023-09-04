@@ -1,8 +1,10 @@
 use rocket::serde::Serialize;
 use serde::Deserialize;
 use chrono::prelude::*;
+use rocket_okapi::okapi::schemars;
+use rocket_okapi::okapi::schemars::JsonSchema;
 
-#[derive(Clone, Deserialize, Serialize)]
+#[derive(Clone, Deserialize, Serialize, JsonSchema)]
 #[serde(crate = "rocket::serde")]
 pub struct User {
     pub id: u8,

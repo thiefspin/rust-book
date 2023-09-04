@@ -8,6 +8,8 @@ edition = "2021"
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
 chrono = { version = "0.4.28", features = ["serde"] }
+schemars = { version = "0.8", features = ["chrono"] }
+rocket_okapi = { version = "0.8.0-rc.3", features = ["swagger", "rapidoc"] }
 
 [dependencies.rocket]
 rocket = "0.5.0-rc.3"
