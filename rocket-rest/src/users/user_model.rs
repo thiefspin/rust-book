@@ -7,7 +7,7 @@ use rocket_okapi::okapi::schemars::JsonSchema;
 #[derive(Clone, Deserialize, Serialize, JsonSchema)]
 #[serde(crate = "rocket::serde")]
 pub struct User {
-    pub id: u8,
+    pub id: u64,
     pub name: String,
     pub created: DateTime<FixedOffset>,
     pub active: bool
