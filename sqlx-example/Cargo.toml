@@ -1,0 +1,12 @@
+[package]
+name = "sqlx-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4.31", features = ["serde"] }
+dotenv = "0.15.0"
+sqlx = { version = "0.7.2", features = ["runtime-async-std-native-tls", "postgres", "chrono", "uuid"] }
+tokio = { version = "1.0.0", features = ["rt", "rt-multi-thread", "macros"] }
